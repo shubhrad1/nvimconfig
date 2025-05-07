@@ -38,8 +38,8 @@ return {
 --      }
 --    }
     }
-    vim.keymap.set('n','<leader>e',':Neotree filesystem reveal left<CR>',{})
-    vim.keymap.set("n", "<leader>gs", ":Neotree git_status left<CR>", { desc = "Neo-tree Git Status" })
+    vim.keymap.set('n','<C-e>',':Neotree filesystem reveal left<CR>',{})
+    vim.keymap.set("n", "<C-e>gs", ":Neotree git_status left<CR>", { desc = "Neo-tree Git Status" })
   end
 
   }
