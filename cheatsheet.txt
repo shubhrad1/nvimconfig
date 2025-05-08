@@ -1,0 +1,16 @@
+## LSP
+Hover (LSP) | K
+Get code definition (LSP) | gd
+Get code reference (LSP)  |  gr
+Get code actions (LSP)  |ca
+
+## Null-LS
+Format and diagnostics (Null-LS)  | <leadergf>gf
+
+## telescope
+Find files (telescope)  |  <C-p>
+Live grep (telescope) | <leader>fd
+
+## neotree
+Open Neotree left (Neotree) | <C-e>
+Open Neotree git status left (Neotree)  | <C-e>gs
