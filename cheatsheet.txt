@@ -35,3 +35,10 @@ Floating Terminal (TermToggle)  | <leader>tf
 Open debugger / Continue | <C-d>c
 Add breakpoint | <C-d>b
 
+## oil
+Open Oil File Manager | <leader>-
+Go up one dir | -
+
+## GitSign
+Line Blame  | <leader>gt
+Line Hunk preview(Diff) | <leader>gp
