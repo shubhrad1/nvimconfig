@@ -5,12 +5,33 @@ Get code reference (LSP)  |  gr
 Get code actions (LSP)  |ca
 
 ## Null-LS
-Format and diagnostics (Null-LS)  | <leadergf>gf
+Format and diagnostics (Null-LS)  | <leader>gf
 
 ## telescope
 Find files (telescope)  |  <C-p>
 Live grep (telescope) | <leader>fd
 
 ## neotree
-Open Neotree left (Neotree) | <C-e>
-Open Neotree git status left (Neotree)  | <C-e>gs
+Open Neotree left (Neotree) | <leader>e
+Open Neotree git status left (Neotree)  | <leader>gs
+Open Neotree buffer (Neotree) | <leader>bf
+Open File in new tab | t
+Open Neotree diagnostocs (Neotree)  | <leader>db
+
+## window
+Horizontal split | <C-w>s
+Vertical split | <C-w>v
+Next tab | gt
+Previous tab  | gT
+
+## terminal
+Open Terminal (TermToggle) | <C-\>
+Close Terminal (TermToggle) | <leader>tc 
+Split Horizontally (TermToggle) | <leader>th
+Split Vertically (TermToggle) | <leader>tv
+Floating Terminal (TermToggle)  | <leader>tf
+
+## debug
+Open debugger / Continue | <C-d>c
+Add breakpoint | <C-d>b
+

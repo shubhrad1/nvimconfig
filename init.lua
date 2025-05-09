@@ -1,5 +1,6 @@
 -- init.lua
 
+
 -- Set <space> as the leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -14,6 +15,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
+vim.o.mouse = "a"
 
 -- Bootstrap lazy.nvim plugin manager
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
@@ -28,6 +30,7 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+
 
 require('lazy').setup("plugins")
 
