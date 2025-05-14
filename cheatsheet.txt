@@ -9,7 +9,7 @@ Format and diagnostics (Null-LS)  | <leader>gf
 
 ## telescope
 Find files (telescope)  |  <C-p>
-Live grep (telescope) | <leader>fd
+Live grep (telescope) | <leader>fg
 
 ## neotree
 Open Neotree left (Neotree) | <leader>e
@@ -42,3 +42,11 @@ Go up one dir | -
 ## GitSign
 Line Blame  | <leader>gt
 Line Hunk preview(Diff) | <leader>gp
+
+## Comments
+Comment line | gc<h,j,k,l>
+Comment all line below | gcG
+Comment current line | gcc
+
+## Lazygit
+Open LazyGit  | <leader>lg
