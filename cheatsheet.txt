@@ -50,3 +50,7 @@ Comment current line | gcc
 
 ## Lazygit
 Open LazyGit  | <leader>lg
+
+## ToDo
+Open TODO List Telescope | <leader>ft
+
