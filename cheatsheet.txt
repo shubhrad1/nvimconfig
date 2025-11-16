@@ -54,3 +54,5 @@ Open LazyGit  | <leader>lg
 ## ToDo
 Open TODO List Telescope | <leader>ft
 
+## Venv
+Change python VENV | ,v

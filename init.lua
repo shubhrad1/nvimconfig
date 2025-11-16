@@ -16,6 +16,7 @@ vim.opt.wrap = false
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.o.mouse = "a"
+vim.opt.clipboard = "unnamedplus"
 
 -- Bootstrap lazy.nvim plugin manager
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
