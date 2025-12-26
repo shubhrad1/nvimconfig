@@ -61,6 +61,13 @@ return {
       vim.lsp.enable("lua_ls")
 
       -- pyright
+      local function get_python_path()
+        local venv = vim.env.VIRTUAL_ENV
+        if venv and #venv > 0 then
+          return venv .. "/bin/python"
+        end
+        return vim.fn.exepath("python3") or "python3"
+      end
       vim.lsp.config("pyright", {
         capabilities = capabilities,
         cmd = { vim.fn.stdpath("data") .. "/mason/bin/pyright-langserver", "--stdio" },
@@ -68,16 +75,19 @@ return {
         filetypes = { "python" },
         settings = {
           python = {
-            pythonPath = function()
-            local venv = vim.fn.getenv("VIRTUAL_ENV")
-            if venv and venv ~= vim.NIL and #venv > 0 then
-              return venv .. "/bin/python"
-            end
-              return vim.fn.exepath("python3") or "python3"
-            end,
+            pythonPath = get_python_path(),
+            -- pythonPath = function()
+            -- local venv = vim.fn.getenv("VIRTUAL_ENV")
+            -- if venv and venv ~= vim.NIL and #venv > 0 then
+            --   return venv .. "/bin/python"
+            -- end
+            --   return vim.fn.exepath("python3") or "python3"
+            -- end,
             analysis = {
-              typeCheckingMode = "off",
+              -- igonre={"*"},
+              typeCheckingMode = "basic",
               autoSearchPaths = true,
+              -- diagnosticMode = "openFilesOnly",
               diagnosticMode = "workspace",
               useLibraryCodeForTypes = true,
             },
